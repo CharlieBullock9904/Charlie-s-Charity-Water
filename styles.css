@@ -511,6 +511,122 @@ section.impact-story .impact-image {
   font-weight: 400;
 }
 
+/* Footer styles */
+.footer {
+  background: linear-gradient(135deg, #003366 0%, #1a1a1a 50%, #003366 100%);
+  color: #fff7e1;
+  padding: 3rem 1rem 1rem 1rem;
+  margin-top: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 201, 7, 0.1), transparent);
+  animation: shimmer 6s infinite;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-section h3 {
+  color: #ffc907;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.footer-section h4 {
+  color: #fed8c1;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.footer-section p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #fff7e1;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: #fff7e1;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.footer-section ul li a:hover {
+  color: #ffc907;
+  transform: translateX(5px);
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  color: #fff7e1;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 201, 7, 0.2);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  border: 1px solid rgba(255, 201, 7, 0.3);
+}
+
+.social-link:hover {
+  background: #ffc907;
+  color: #003366;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 201, 7, 0.4);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 201, 7, 0.3);
+  margin-top: 2rem;
+  padding-top: 1rem;
+  text-align: center;
+  color: #fed8c1;
+  font-size: 0.9rem;
+}
+
+.footer-bottom a {
+  color: #ffc907;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  color: #fff7e1;
+}
+
 /* Responsive adjustments */
 @media (max-width: 600px) {
   header.hero h1 {
